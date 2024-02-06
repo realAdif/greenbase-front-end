@@ -6,4 +6,7 @@
   html {
     @apply bg-[#F5F6FA];
   }
+  span {
+    @apply text-general text-xs;
+  }
 }
