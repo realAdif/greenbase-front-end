@@ -2,7 +2,7 @@ import {
   sidebarTopList,
   sidebarMiddleList,
   sidebarBottomList,
-} from '../utils/List';
+} from '../utils/sidebarList';
 
 function Sidebar() {
   return (

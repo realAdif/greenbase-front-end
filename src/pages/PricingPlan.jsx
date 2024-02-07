@@ -1,8 +1,14 @@
+import PricingPlansCards from '../components/PricingPlansCards';
+import {
+  basicPlan,
+  professionalPlan,
+  businessPlan,
+} from '../utils/pricingList';
 function PricingPlan() {
   return (
-    <div className=" py-10 bg-white rounded-md">
+    <div className=" py-10 bg-white rounded-md ">
       {/* title */}
-      <div className="text-center">
+      <div className="text-center ">
         <h2 className=" mb-4">Pricing Plans</h2>
         <p className=" mb-6">
           Familiarize yourself with the payment plans below.
@@ -21,6 +27,26 @@ function PricingPlan() {
         </div>
       </div>
       {/* cards */}
+      <div className="flex justify-center gap-x-6 mt-12">
+        <PricingPlansCards
+          planName="Basic"
+          price="12"
+          services={basicPlan}
+          buttonStyle="btn-outline"
+        />
+        <PricingPlansCards
+          planName="Professional"
+          price="20"
+          services={professionalPlan}
+          buttonStyle="btn-primary"
+        />
+        <PricingPlansCards
+          planName="Business"
+          price="45"
+          services={businessPlan}
+          buttonStyle="btn-outline"
+        />
+      </div>
       {/* footer */}
       <p className="text-center mt-7">Cancel or upgrade your plan anytime</p>
     </div>

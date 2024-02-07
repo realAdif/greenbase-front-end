@@ -12,10 +12,45 @@
   span {
     @apply text-general text-xs;
   }
+  h3 {
+    @apply text-[#131523] text-[32px] font-bold leading-9;
+  }
   h1 {
     @apply text-md font-bold leading-9 text-[#131523];
   }
   h2 {
     @apply text-[20px] font-bold leading-9 text-[#131523];
+  }
+}
+@layer utilities {
+  .btn-outline {
+    color: #1e5eff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+
+    border-radius: 4px;
+    border: 1px solid #d7dbec;
+    background: #fff;
+    padding: 8px 0;
+
+    width: 100%;
+  }
+  .btn-primary {
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    border-radius: 4px;
+    border: 1px solid #d7dbec;
+    background: #1e5eff;
+    padding: 8px 0;
+
+    width: 100%;
   }
 }
