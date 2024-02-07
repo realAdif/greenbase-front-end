@@ -6,7 +6,7 @@ import {
 } from '../utils/pricingList';
 function PricingPlan() {
   return (
-    <div className=" py-10 bg-white rounded-md ">
+    <div className="py-10 my-8 bg-white rounded-md drop-shadow-sm ">
       {/* title */}
       <div className="text-center ">
         <h2 className=" mb-4">Pricing Plans</h2>
@@ -17,7 +17,7 @@ function PricingPlan() {
         {/* bill */}
         <div className="flex justify-center border border-[#D7DBEC] rounded max-w-[243px] mx-auto">
           {/* monthly */}
-          <div className="min-w-[120px]  text-left pl-2">
+          <div className="min-w-[120px] text-left pl-2">
             <p> Bill Monthly</p>
           </div>
           {/* Annually */}
