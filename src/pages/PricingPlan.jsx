@@ -6,7 +6,7 @@ import {
 } from '../utils/pricingList';
 function PricingPlan() {
   return (
-    <div className="py-10 my-8 bg-white rounded-md drop-shadow-sm ">
+    <div className="py-10 px-7 my-8 bg-white rounded-md drop-shadow-sm ">
       {/* title */}
       <div className="text-center ">
         <h2 className=" mb-4">Pricing Plans</h2>
@@ -27,7 +27,7 @@ function PricingPlan() {
         </div>
       </div>
       {/* cards */}
-      <div className="flex justify-center items-center lg:flex-row flex-col gap-x-6 mt-12">
+      <div className="flex justify-center items-center lg:flex-row flex-col gap-6 mt-12">
         <PricingPlansCards
           planName="Basic"
           price="12"

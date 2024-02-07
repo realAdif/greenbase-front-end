@@ -7,7 +7,7 @@ import IconComponent from './IconComponent';
 
 function Sidebar() {
   return (
-    <div className="max-w-[250px] border-r border-t border-[#D7DBEC] h-screen drop-shadow-2xl">
+    <div className="max-w-[250px]  h-screen drop-shadow-2xl">
       {/* sidebar top list */}
       <div>
         {sidebarTopList.map((list, index) => {
