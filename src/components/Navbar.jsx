@@ -9,9 +9,14 @@ function Navbar() {
         <h4 className=" font-extrabold text-[21.7px] leading-8">Modernize</h4>
       </div>
       {/* searchbar */}
-      <div className="flex gap-x-2 absolute left-60">
+      <div className="md:flex gap-x-2 absolute left-60 hidden ">
         <IconComponent imgKey="searchIcon" alt="search icon" />
-        <span>Search...</span>
+
+        <input
+          type="text"
+          placeholder="Search..."
+          className=" placeholder:text-[14px] "
+        />
       </div>
       {/* links */}
       <div className="flex gap-3">
@@ -29,10 +34,14 @@ function Navbar() {
           />
         </div>
         <div className="flex items-center gap-x-2">
-          <img src={AvaterIcon} alt="" className="" />
-          <span>X’eriya Ponald</span>
+          <img src={AvaterIcon} alt="" />
+          <span className="hidden md:block">X’eriya Ponald</span>
         </div>
-        <IconComponent imgKey="arrowdownIcon" alt="arrow down icon" />
+        <IconComponent
+          imgKey="arrowdownIcon"
+          alt="arrow down icon"
+          className="hidden"
+        />
       </div>
     </nav>
   );

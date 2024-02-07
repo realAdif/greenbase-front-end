@@ -10,7 +10,7 @@ PricingPlansCards.propTypes = {
 
 function PricingPlansCards({ planName, price, services, buttonStyle }) {
   return (
-    <div className="p-7 min-w-[335px] border border-[#E6E9F4] rounded">
+    <div className="p-7 w-[335px] border border-[#E6E9F4] rounded">
       {/* title / plan name */}
       <div className="border-b border-[#E6E9F4] pb-7">
         <div className="flex items-end gap-x-1">

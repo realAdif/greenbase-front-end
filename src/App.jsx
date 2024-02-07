@@ -9,8 +9,8 @@ function App() {
       <header className="fixed top-0  w-screen z-50">
         <Navbar />
       </header>
-      <section className="flex">
-        <aside className="flex-none min-w-[250px] fixed left-0 mt-16">
+      <section>
+        <aside className=" min-w-[250px] lg:block fixed left-0 mt-16 hidden ">
           <Sidebar />
         </aside>
         <div className="flex-1 p-4 container mx-auto">

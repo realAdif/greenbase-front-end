@@ -27,7 +27,7 @@ function PricingPlan() {
         </div>
       </div>
       {/* cards */}
-      <div className="flex justify-center gap-x-6 mt-12">
+      <div className="flex justify-center items-center lg:flex-row flex-col gap-x-6 mt-12">
         <PricingPlansCards
           planName="Basic"
           price="12"
