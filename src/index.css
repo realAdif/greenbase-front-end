@@ -6,7 +6,16 @@
   html {
     @apply bg-[#F5F6FA];
   }
+  p {
+    @apply text-general text-[16px] font-normal leading-6;
+  }
   span {
     @apply text-general text-xs;
+  }
+  h1 {
+    @apply text-md font-bold leading-9 text-[#131523];
+  }
+  h2 {
+    @apply text-[20px] font-bold leading-9 text-[#131523];
   }
 }

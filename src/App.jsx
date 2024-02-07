@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
+import PricingPlan from './pages/PricingPlan';
 
 function App() {
   return (
@@ -7,9 +8,15 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <aside>
-        <Sidebar />
-      </aside>
+      <section className="flex">
+        <aside className="flex-none min-w-[250px]">
+          <Sidebar />
+        </aside>
+        <div className="flex-1 p-4 container mx-auto ">
+          <h1>Chose a Plan</h1>
+          <PricingPlan />
+        </div>
+      </section>
     </main>
   );
 }
