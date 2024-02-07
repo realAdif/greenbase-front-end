@@ -13,7 +13,7 @@ function App() {
         <aside className="flex-none min-w-[250px] fixed left-0 mt-16">
           <Sidebar />
         </aside>
-        <div className="flex-1 p-4 container mx-auto ">
+        <div className="flex-1 p-4 container mx-auto">
           <h1>Chose a Plan</h1>
           <PricingPlan />
           <FAQPage />

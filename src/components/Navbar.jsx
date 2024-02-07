@@ -15,9 +15,18 @@ function Navbar() {
       </div>
       {/* links */}
       <div className="flex gap-3">
-        <div className="flex gap-x-4">
+        <div className="flex gap-x-4 relative">
           <IconComponent imgKey="chatIcon" alt="chat icon" />
-          <IconComponent imgKey="bellIcon" alt="bell icon" />
+
+          <div className=" absolute -right-1 -top-1 bg-primary rounded-full w-4 h-4 flex justify-center items-center z-10">
+            <p className="text-white font-bold">5</p>
+          </div>
+
+          <IconComponent
+            imgKey="bellIcon"
+            alt="bell icon"
+            className="relative"
+          />
         </div>
         <div className="flex items-center gap-x-2">
           <img src={AvaterIcon} alt="" className="" />

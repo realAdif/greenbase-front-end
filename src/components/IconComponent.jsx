@@ -7,6 +7,7 @@ import bellIcon from '../assets/icon/bell-icon.svg';
 import arrowdownIcon from '../assets/icon/arrow-down.svg';
 import greenTickIcon from '../assets/icon/green-tick.svg';
 import roundedIcon from '../assets/icon/rounded-icon.svg';
+import badgeIcon from '../assets/icon/16badge.svg';
 
 const images = {
   modernizeIcon,
@@ -16,15 +17,17 @@ const images = {
   arrowdownIcon,
   greenTickIcon,
   roundedIcon,
+  badgeIcon,
 };
 
-const IconComponent = ({ imgKey, alt }) => {
-  return <img src={images[imgKey]} alt={alt} />;
+const IconComponent = ({ imgKey, alt, className }) => {
+  return <img src={images[imgKey]} alt={alt} className={className} />;
 };
 
 IconComponent.propTypes = {
   imgKey: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
+  className: PropTypes.string,
 };
 
 export default IconComponent;

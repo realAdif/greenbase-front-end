@@ -3,6 +3,7 @@ import {
   sidebarMiddleList,
   sidebarBottomList,
 } from '../utils/sidebarList';
+import IconComponent from './IconComponent';
 
 function Sidebar() {
   return (
@@ -17,6 +18,11 @@ function Sidebar() {
             >
               <img src={list.icon} alt={list.alt} />
               <span>{list.title}</span>
+              <div className="ml-auto">
+                {list.title === 'Orders' ? (
+                  <IconComponent imgKey="badgeIcon" />
+                ) : null}
+              </div>
             </div>
           );
         })}
