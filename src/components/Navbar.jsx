@@ -2,7 +2,7 @@ import IconComponent from './IconComponent';
 import AvaterIcon from '../assets/images/bitmap.jpg';
 function Navbar() {
   return (
-    <nav className="bg-white h-16 flex items-center justify-between px-4 relative">
+    <nav className="bg-white h-16 flex items-center justify-between px-4 relative drop-shadow-lg">
       {/* icon */}
       <div className="flex gap-x-3">
         <IconComponent imgKey="modernizeIcon" alt="Modernize Icon" />
